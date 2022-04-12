@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+
+
+<style>
+.zakir{
+    margin-top: 100px;
+}
+
+.z{
+    margin-top: 95px;
+}
+
+.hey {
+   width:400px;
+   height:380px;
+   position:relative;
+   -webkit-animation:glide 2s ease-in-out alternate infinite;
+}
+
+@keyframes glide  {
+   from {
+      bottom:0px;
+      top:0px;
+   }
+   
+   to {
+      bottom:0px;
+      top:20px;
+   }
+
+}
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+#newsletter{
+    /* min-height: 70vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.picture{
+    width: 50%;
+    background: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDJ8fGxhcHRvcHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
+}
+.welcome{
+    background-color: #fff;
+    width: 50%;
+    padding: 150px 60px;
+}
+.welcome h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.welcome p{
+    text-transform: capitalize;
+    font-size: 1em;
+    color: rgba(51, 51, 51, .7);
+    margin-bottom: 30px;
+}
+.welcome form{
+    background-color: #333;
+    display: flex;
+    /*justify-content: center;
+    */border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 15px 20px;
+    color: #fff;
+    /* flex: 1; */
+}
+form input[type= 'email']{
+    flex: 1;
+    font-size: 1.3em;
+
+}
+form input[type= 'submit']{
+    /* background-color: #fff; */
+    color: #fff;
+    border-left: 2px solid #f1f1f1;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+form input[type= 'submit']:hover{
+    opacity: .7;
+}
+
+@media screen and (max-width: 1079px) {
+    #newletter {
+        flex-direction: column;
+    }
+    .picture{width: 100%;height: 300px;}
+    .welcome {
+        padding: 50px 20%;
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+}
+
+@media screen and (max-width: 775px) {
+    form input[type= 'email']{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .welcome{
+        width: 100%;
+        padding: 80px 30px;
+    }
+    .welcome form{
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 0;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    form input[type= 'email']{
+        font-size: 1em;
+        border-bottom: 1px solid #333;
+        color: #333;
+    }
+    ::placeholder{
+        font-size: large;
+        color: #333;
+        opacity: .5;
+    }
+    form input[type= 'submit']{
+        color: #fff;
+        border-left: none;
+        background-color: #333;
+        width: 100px;
+        margin: 20px auto;
+        font-size: 1em;
+    } 
+}
+
+
+
+.sal{
+  margin-bottom: 50px;
+}
+
+
+h1 {
+	font-family: 'Vollkorn SC', serif;
+	border-bottom: dotted 2px black;
+	display: inline-block;
+	margin: 100px 0 50px;
+}
+h2 {
+	font-family: 'Euphoria Script';
+	font-size: 40px;
+}
+
+/*class selector*/
+.margin {
+	margin: 50px 0;	
+}
+
+
+.ak{
+
+  width: 400px;
+  height: 400px;
+}
+
+
+
+/* <----------------------------------footer----------------------------------------------------- */
+
+
+
+.new_footer_area {
+    background: #fbfbfd;
+}
+
+
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none !important;
+    outline: none;
+    display: block;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+  color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #4b505e;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+}
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("http://droitthemes.com/html/saasland/img/seo/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+
+
+</style>
+
+
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="#" class="text-danger">ICoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ABOUT
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">SUBSCRIBE</a></li>
+              <li><a class="dropdown-item" href="#">PAY FOR RENT</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">OFFERS</a></li>
+            </ul>
+          </li>
+        
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <------------------------------------------------image-------------------------------------- -->
+  <div class="container z">
+    <div class="row">
+      <div class="col-lg-6 ">
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/36018/child-bpy-computer-clipart-xl.png"  width="400px" height="390px" class="hey">
+      </div>
+      <div class="col-lg-6">
+        <div class="jumbotron">
+            <h1 class="display-4 text-danger animate-charcter">Welcome to iCoding</h1>
+            <p class="lead text-dark">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <h5>It uses utility classes for typography and spacing to space content out within the larger container.</h5>
+            <p class="lead">
+              <a class="btn btn-outline-primary btn-lg mt-3" href="https://youtu.be/EHTWMpD6S_0" target="_blank" role="button">Enroll Now</a>
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <hr class="my-4 mt-5">
+
+
+  <!-- <----------------------------------------cards------------------------> 
+  <h2 class="text-center text-bold">Services</h2>
+  <div class="container zakir">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://miro.medium.com/max/1400/0*5CnyWf0j4a9daNkY" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">Python</h5>
+                  <p class="card-text">Some quick example text to build on the Amazon Originals and make up the bulk of the card's content.</p>
+                  <a href="https://youtu.be/gfDE2a7MKjA" target="_blank" class="btn btn-primary">WATCH NOW!</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://miro.medium.com/max/1400/0*5CnyWf0j4a9daNkY" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">React Js</h5>
+                  <p class="card-text">Some quick example text to build on the Amazon Originals and make up the bulk of the card's content.</p>
+                  <a href="https://youtu.be/EHTWMpD6S_0" target="_blank" class="btn btn-primary">WATCH NOW!</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://miro.medium.com/max/1400/0*5CnyWf0j4a9daNkY" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">Angular</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://i.ytimg.com/an_webp/0LhBvp8qpro/mqdefault_6s.webp?du=3000&sqp=CLyw1JIG&rs=AOn4CLCUP9hQn4yt_dkLrqVvWGnrybqR7A" target="_blank" class="btn btn-primary">WATCH NOW!</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://miro.medium.com/max/1400/0*5CnyWf0j4a9daNkY" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">Java</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://youtu.be/UmnCZ7-9yDY" target="_blank" class="btn btn-primary">WATCH NOW!</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://miro.medium.com/max/1400/0*5CnyWf0j4a9daNkY" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">C++ & C</h5>
+                  <p class="card-text">Some quick example text to build on the Amazon Originals and make up the bulk of the card's content.</p>
+                  <a href="https://youtu.be/EHTWMpD6S_0" target="_blank" class="btn btn-primary">WATCH NOW!</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://miro.medium.com/max/1400/0*5CnyWf0j4a9daNkY" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-danger">Html & CSS</h5>
+                  <p class="card-text">Some quick example text to build on the Amazon Originals and make up the bulk of the card's content.</p>
+                  <a href="https://youtu.be/EHTWMpD6S_0" target="_blank" class="btn btn-primary">WATCH NOW!</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5">
+<!-- <----------------------------------------------form----------------------------------------------------- -->
+<h2 class="text-center sal">Newsletter</h2>
+<section id="newsletter">
+    <div class="picture"></div>
+    <article class="welcome">
+        <h2>don't miss our letters</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, beatae.</p>
+        <form action="">
+            <input type="email" name="" id="" placeholder="enter your email ...">
+            <input type="submit" value="join us">
+        </form>
+    </article>
+</section>
+    
+<hr class="my-4 mt-5">
+
+<!-- <------------------------------------------------about----------------------------------------------- -->
+
+<section id="about-me">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="about-me-box">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <img class="ak" src="E:\backup\DCIM\Camera/zaki.jpg" />
+            </div><!-- end col-md-7 -->
+            <div class="col-md-6 col-xs-12">
+              <div class="text-center"><h1>About Me</h1></div>
+              <p>Hi! My name is Zuber Shaikh and this is Check This Out.This personal review blog is filled with all my favoites. From movies to bucket list ideas to random suggestions for you. This is my personal taste so I can confirm that all the suggestions made are the best suggestions in the entire universe! Well... at least to me they are. Have fun looking around. I hope you find something worth enjoying. </p>
+            </div><!-- end col-md-5-->
+          </div><!--end row -->
+        </div><!-- end about-me-box -->
+      </div><!-- end col-md-12-->
+    </div><!-- end row-->
+  </div><!-- end container -->
+</section>
+
+
+
+
+
+<!-- <---------------------------------------footer--------------------------------------------------- -->
+
+<hr class="my-5">
+<footer class="new_footer_area bg_color">
+  <div class="new_footer_top">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                      <p>Don’t miss any updates of our new templates and extensions.!</p>
+                      <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                          <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                          <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                          <p class="mchimp-errmessage" style="display: none;"></p>
+                          <p class="mchimp-sucmessage" style="display: none;"></p>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                      <ul class="list-unstyled f_list">
+                          <li><a href="#" style="text-decoration:none">Company</a></li>
+                          <li><a href="#" style="text-decoration:none">Android App</a></li>
+                          <li><a href="#" style="text-decoration:none">ios App</a></li>
+                          <li><a href="#" style="text-decoration:none">Desktop</a></li>
+                          <li><a href="#" style="text-decoration:none">Projects</a></li>
+                          <li><a href="#" style="text-decoration:none">My tasks</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                      <ul class="list-unstyled f_list">
+                          <li><a href="#" style="text-decoration:none">FAQ</a></li>
+                          <li><a href="#" style="text-decoration:none">Term &amp; conditions</a></li>
+                          <li><a href="#" style="text-decoration:none">Reporting</a></li>
+                          <li><a href="#" style="text-decoration:none">Documentation</a></li>
+                          <li><a href="#" style="text-decoration:none">Support Policy</a></li>
+                          <li><a href="#" style="text-decoration:none">Privacy</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                      <div class="f_social_icon">
+                          <a href="#" style="text-decoration:none" class="fab fa-facebook"></a>
+                          <a href="#" style="text-decoration:none" class="fab fa-twitter"></a>
+                          <a href="#" style="text-decoration:none" class="fab fa-linkedin"></a>
+                          <a href="#" style="text-decoration:none" class="fab fa-pinterest"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+      </div>
+  </div>
+  <div class="footer_bottom">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6 col-sm-7">
+                  <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+              </div>
+              <div class="col-lg-6 col-sm-5 text-right">
+                  <p>Made with <i class="icon_heart"></i> in <a href="#">CakeCounter</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
